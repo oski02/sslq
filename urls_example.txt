@@ -1,0 +1,19 @@
+# Ejemplo de archivo de URLs para analizar PQC
+# Una URL por línea. Líneas que empiezan con # son comentarios.
+
+# Sitios conocidos con soporte PQC experimental
+https://pq.cloudflareresearch.com
+
+# Sitios populares (probablemente sin PQC aún)
+https://google.com
+https://github.com
+https://cloudflare.com
+https://amazon.com
+
+# Se pueden especificar puertos
+# example.com:443
+# test.example.com:8443
+
+# Sitios adicionales para probar
+https://microsoft.com
+https://facebook.com
