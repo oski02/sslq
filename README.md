@@ -1,12 +1,22 @@
-# sslq - Post-Quantum Cryptography Scanner for SSL/TLS
+<p align="center">
+  <img src="assets/banner.svg" alt="sslq - Post-Quantum Cryptography Scanner" width="100%">
+</p>
 
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-[![Python 3.7+](https://img.shields.io/badge/python-3.7+-blue.svg)](https://www.python.org/downloads/)
-[![GitHub](https://img.shields.io/github/stars/oski02/sslq?style=social)](https://github.com/oski02/sslq)
+<h1 align="center">sslq - Post-Quantum Cryptography Scanner for SSL/TLS</h1>
 
-**sslq** is a powerful **Post-Quantum Cryptography (PQC) scanner** and detector for SSL/TLS connections. Analyze websites and servers to detect quantum-resistant cryptography algorithms including **Kyber (ML-KEM)**, **Dilithium (ML-DSA)**, and other NIST-standardized post-quantum algorithms.
+<p align="center">
+  <a href="https://opensource.org/licenses/MIT"><img src="https://img.shields.io/badge/License-MIT-yellow.svg" alt="License: MIT"></a>
+  <a href="https://www.python.org/downloads/"><img src="https://img.shields.io/badge/python-3.7+-blue.svg" alt="Python 3.7+"></a>
+  <a href="https://github.com/oski02/sslq"><img src="https://img.shields.io/github/stars/oski02/sslq?style=social" alt="GitHub stars"></a>
+</p>
 
-🔐 **Detect quantum-safe encryption** | 🚀 **Fast SSL/TLS analysis** | 📊 **JSON export** | 🎨 **Beautiful output**
+<p align="center">
+  <strong>sslq</strong> is a powerful <strong>Post-Quantum Cryptography (PQC) scanner</strong> and detector for SSL/TLS connections. Analyze websites and servers to detect quantum-resistant cryptography algorithms including <strong>Kyber (ML-KEM)</strong>, <strong>Dilithium (ML-DSA)</strong>, and other NIST-standardized post-quantum algorithms.
+</p>
+
+<p align="center">
+  🔐 <strong>Detect quantum-safe encryption</strong> | 🚀 <strong>Fast SSL/TLS analysis</strong> | 📊 <strong>JSON export</strong> | 🎨 <strong>Beautiful output</strong>
+</p>
 
 ---
 
@@ -97,24 +107,14 @@ Major tech companies like **Google**, **Cloudflare**, **Microsoft**, and **Meta*
 
 ```bash
 # Check if a website uses Kyber (ML-KEM) for quantum resistance
-python3 sslq.py -u https://google.com
+python3 sslq.py -u https://cloudflare.com
 ```
 
-**Output:**
-```
-================================================================================
-Target: google.com:443
-================================================================================
+**Example Output:**
 
-[✓] POST-QUANTUM CRYPTOGRAPHY DETECTED
-    PQC in key exchange: X25519MLKEM768
-
-Key Exchange:
-  Negotiated Group: X25519MLKEM768
-  Group Type: POST-QUANTUM HYBRID
-    - KYBER: mlkem
-    - HYBRID: x25519mlkem
-```
+<p align="center">
+  <img src="assets/screenshot.svg" alt="sslq scan example" width="90%">
+</p>
 
 ### Bulk PQC Scanner
 
